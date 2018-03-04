@@ -1,0 +1,17 @@
+<input type="submit" [value]="btnTextDeneme">
+
+<p>
+  home works!
+</p>
+
+<input type="text" [(ngModel)]= "goalText"> 
+<span>{{goalText}}</span>
+<input type="submit" value="{{btnText}}" (click)="addItem()">
+<br>
+item count: <h2>{{itemCount}}</h2> 
+
+<p *ngFor="let goal of goals">
+{{goal}}
+</p>
+
+
